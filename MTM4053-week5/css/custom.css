@@ -1,0 +1,93 @@
+/* line 1, ../scss/custom.scss */
+body {
+  font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* line 4, ../scss/custom.scss */
+#home {
+  background-color: #8fbc8f;
+}
+
+/* line 7, ../scss/custom.scss */
+.social-icon-item {
+  margin-right: 0.5rem;
+}
+
+/* line 10, ../scss/custom.scss */
+footer {
+  border-top: 1px solid #f2f2f4;
+}
+
+/* line 14, ../scss/custom.scss */
+.nav {
+  float: right;
+}
+
+/* line 17, ../scss/custom.scss */
+.products > div {
+  padding: 1rem;
+}
+
+/* line 20, ../scss/custom.scss */
+.products {
+  background-color: darkseagreen;
+}
+/* line 23, ../scss/custom.scss */
+.products:nth-child(2) {
+  background-color: bisque;
+}
+/* line 26, ../scss/custom.scss */
+.products:last-child {
+  background-color: antiquewhite;
+}
+
+/* line 30, ../scss/custom.scss */
+.ex-offset {
+  background-color: pink;
+  height: 300px;
+  background-image: url("../images/packman.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* line 38, ../scss/custom.scss */
+#slider-wrapper {
+  margin-bottom: 2rem;
+}
+
+/* line 42, ../scss/custom.scss */
+#text-tooltips {
+  padding-top: 2rem;
+}
+
+/* line 46, ../scss/custom.scss */
+#registration-form {
+  padding: 2rem 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  /* line 51, ../scss/custom.scss */
+  .nav {
+    float: none;
+  }
+
+  /* line 54, ../scss/custom.scss */
+  .navbar-toggler {
+    float: right;
+  }
+
+  /* line 57, ../scss/custom.scss */
+  .navbar-toggleable-xs {
+    clear: both;
+  }
+
+  /* line 60, ../scss/custom.scss */
+  .navbar-nav .nav-item {
+    float: none;
+  }
+
+  /* line 63, ../scss/custom.scss */
+  .navbar-nav .nav-item + .nav-item {
+    margin-left: 0;
+  }
+}

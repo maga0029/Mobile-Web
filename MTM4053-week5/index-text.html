@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-4.0.0-alpha2.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <nav id="mainnav" class="navbar navbar-light bg-faded">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Responsive navbar</a>
+                    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+                        &#9776;
+                    </button>
+                </div>
+                <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section id="text-tooltips">
+            <!-- Tooltips: hover or tap to activate the tooltip. -->
+            <!-- 1) Tether before bootstrap: <script src="js/tether.min.js"></script>
+                 2) html markup for tooltip data-toggle="tooltip"
+                 3) tooltip placement can be top/bottom/left/right
+                 4) Finally, js to activate tooltip on the page
+                         $(function () {
+                              $('[data-toggle="tooltip"]').tooltip()
+                            });
+            -->
+            <p>
+                Cheese and wine port-salut <a href="#" data-toggle="tooltip" title="tooltip text here">cheesecake</a>. When the cheese comes out everybody's happy hard cheese dolcelatte croque monsieur pecorino cheesecake cheddar stilton. Cheese slices fromage frais caerphilly halloumi <a href="#" data-toggle="tooltip" title="another tooltip text here">cheeseburger</a> fromage babybel lancashire. Taleggio roquefort.
+            </p>
+            <p>
+                Babybel goat brie. Cheese slices blue castello cheese and biscuits bocconcini fondue say cheese macaroni cheese feta. Stilton when the cheese comes out everybody's happy pepper jack chalk and cheese cheesecake red leicester everyone loves hard cheese. Queso camembert de normandie roquefort cheese strings cheese and <a href="#" data-toggle="tooltip" data-placement="bottom" title="tooltip text on bottom">wine</a>.                
+            </p>
+        </section>
+        <!-- If you don't specify class="row", .container class has default padding -->
+        <footer>
+            <p>&copy; Copyright 2016 - MTM4053</p>
+            <!-- Glyphicons support is dropped. Use font-awesome instead. -->
+            <p class="social-icons">
+                <a href="#" data-toggle="tooltip" title="facebook" class="social-icon-item"><i class="fa fa-facebook fa-lg"></i></a>
+                <a href="#" data-toggle="tooltip" title="google plus" class="social-icon-item"><i class="fa fa-google-plus-square fa-lg"></i></a>
+                <a href="#" data-toggle="tooltip" title="linkedin" class="social-icon-item"><i class="fa fa-linkedin-square fa-lg"></i></a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- jQuery first, tether then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Tooltip: https://raw.githubusercontent.com/HubSpot/tether/master/dist/js/tether.min.js -->
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap-4.0.0-alpha2.min.js"></script>
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+    </script>
+</body>
+
+</html>

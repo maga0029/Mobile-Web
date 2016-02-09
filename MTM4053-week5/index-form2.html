@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-4.0.0-alpha2.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <nav id="mainnav" class="navbar navbar-light bg-faded">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Responsive navbar</a>
+                    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+                        &#9776;
+                    </button>
+                </div>
+                <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section id="home"  class="row">
+            <form id="registration-form">
+                <div class="col-md-12">
+                    <h3>Registration for RWD Conference</h3></div>
+                <div class="col-md-6">
+                    <fieldset class="form-group">
+                        <label for="firstname">Firstname</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="Enter Firstname">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="lastname">Lastname</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="Enter Lastname">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        <small class="text-muted">We'll never share your email with anyone else.</small>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </fieldset>
+                </div>
+
+                <div class="col-md-6">
+                    <fieldset class="form-group">
+                        <label for="exampleSelect1">Select ticket type</label>
+                        <select class="form-control" id="exampleSelect1">
+                            <option>3-day pass</option>
+                            <option>1-day pass</option>
+                            <option>VIP</option>
+                            <option>Workshops only</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="exampleTextarea">Tell us about yourself</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="profile-picture">Profile picture upload</label>
+                        <input type="file" class="form-control-file" id="profile-picture">
+                        <small class="text-muted">Upload your profile picture.</small>
+                    </fieldset>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> I&apos;d like to volunteer
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> No thanks!
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> I'm a workshop presenter
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; Copyright 2016 - MTM4053</p>
+        </footer>
+    </div>
+
+    <!-- jQuery first, tether then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Tooltip: https://raw.githubusercontent.com/HubSpot/tether/master/dist/js/tether.min.js -->
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap-4.0.0-alpha2.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
+</body>
+
+</html>
